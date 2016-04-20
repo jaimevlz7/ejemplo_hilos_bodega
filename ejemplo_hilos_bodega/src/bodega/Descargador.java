@@ -25,7 +25,12 @@ public class Descargador extends Thread {
 				
             }
 
-            bodega.descargarArticulo(tipo);
+           try {
+				bodega.descargarArticulo(tipo);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
             
         }
     }
