@@ -21,8 +21,12 @@ public class Empacador extends Thread{
             } catch (InterruptedException e) {
 				
             }
-            bodega.crearPaquete();
-            
+try {
+				bodega.crearPaquete();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}            
         }
 
     }
