@@ -27,15 +27,12 @@ public class Bodega {
     public void descargarArticulo(int tipoArticulo) {
 
         if (tipoArticulo == TIPO1) {
-            //volumen = 10;
-            //capacidadBodega++;
             while(capacidadBodega > 190);
             capacidadBodega = capacidadBodega + volumenTipo1;
             cantidadTipo1++;
         }
         if (tipoArticulo == TIPO2) {            
-            //volumen = 15;
-            //capacidadBodega++;
+            
             while(capacidadBodega > 185);
             capacidadBodega = capacidadBodega + volumenTipo2;
             cantidadTipo2++;
